@@ -14,48 +14,152 @@ https://git-scm.com/
 
 <h3>Comandos</h3>
 
-	$ pwd    	-> mostra o diretorio atual
+# mostra o diretorio atual
+	$ pwd 
 	
-	$ ls   		->Lista todos os arquivos do diretório
+	# Lista todos os arquivos do diretório
+	$ ls  
 	
-	$ ls -la  	->Lista todos os arquivos do diretório inclusive os ocultos
+	# Lista todos os arquivos do diretório inclusive os ocultos
+	$ ls -la 
+		
+	# limpa a tela 
+	$ clear 	
 	
-	$ clear 	-> Limpa a tela
+	# Cria um diretorio
+	$ mkdir		
 	
-	$ mkdir		-> cria um diretorio
-	
+	#
 	$ cd 		
 	
-		 	 
-	$ Tree .git/   -> Mostra a arvore mostra a estruturade pastas
+	# Mostra a versão instalada do git.
+	$ git version
 	
+	# Mostra a arvore mostra a estruturade pastas
+	$ Tree .git/ 
 	
+	#
 	$ echo "# git_command" >> README.md
 
-
-	$ git init  -> Cria um repositorio vazio dentro da pasta que estiver posicionado.
+	# Cria um repositorio vazio dentro da pasta que estiver posicionado.
+	$ git init
 	 
+	# Mostra as diferenças entre diretorio do projeto (Diretorio de trabalho) e a area de staging (conteiner do git).
+	$ git status
 	
-	$ git status -> Mostra as diferenças entre diretorio do projeto (Diretorio de trabalho) e a area de staging (conteiner do git).
+	# git add
+		$ git add	  -> inclui alterações dos arquivos da area de trabalho para a area de stanging.
+		$ git add -A  -> inclui todos arquivos alterações dos arquivos da area de trabalho para a area de stanging.
+    # Este comando adiciona o(s) arquivo(s) em um lugar que chamamos de INDEX(Area staging), esta area armazena os arquivos para posteriormente serem enviados para o repositório do github.
+	# É importante: O comando ADD não adiciona automaticamente o(s) arquivo(s) ao repositório, apenas prepara para entrar na próxima revisão do repositório.(O envio é feito ao executar o comando push, ver abaixo)
 	
-	$ git add	  -> inclui alterações dos arquivos da area de trabalho para a area de stanging.
-	$ git add -A  -> inclui todos arquivos alterações dos arquivos da area de trabalho para a area de stanging.
+	# Configurando o git
+		$ git config --global user.email "datacrusher@outlook.com"
+		$ git config --global user.name "datacrusher"
+	# Estas configurações ficam alocadas no arquivo ~/.gitconfig, onde o ~ é o seu diretório home.
+	# No Windows, ele fica em c:\Usuarios\<username>\.gitconfig. 
 	
-	$ git config --global user.email "datacrusher@outlook.com"
-	$ git config --global user.name "datacrusher"
-
 	
+	#
 	$ git commit - m 'Primeiro Commit'
 	
+	#Visualizar o Histórico de Commits
 	$ git log
-	$ git log --online   -> lista o log em linhas unicas
 	
-Para subir para o github:	
-	$ git remote add origin https://github.com/Datacrusher/git_command.git
-	$ git push -u origin master
+	#Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica
+	$ git log --oneline  
+	
+	# Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (branchs)
+	$ git log --oneline --decorate
+	
+	Para subir para o github:	
+		#
+		$ git remote add origin https://github.com/Datacrusher/git_command.git
+		
+		#Push (empurrar) é usado para publicar todos os seus commits para o github. Neste momento, será pedido a sua senha.
+		$ git push -u origin master
 	
 	 
-	 
+<h4>Branch e  Merging </h4>
 
+	#Branch é uma nova linha de desenvolvimento (linha de tempo)independente da principal (master). [traduções: Seção, ramo, galho , subdividir-se ]
+	
+	
+	#visualizando as linhas do temo criadas.apenas digite o comando
+	$git branch
+	
+	#Criando uma nova linha de tempo (branch) 
+	$git branch <nome desejado>
+	# Ex:
+	$git branch line1 
+	
+	# O comando Cat serve para criar ou mostrar o conteúdo de um arquivo. 
+	#no exemplo abaixo o conteudo mostra o ponteiro para o ultimo commit
+	$cat .git/refs/heads/master
+	$cat .git/refs/heads/line1	
+
+	#HEAD (area de trabalho staging)
+	#mosca o local atual de trabalho (staging)
+	$cat .git/head
+
+	# mudar de Branch (linha de tempo)
+	# o comando abaixo Move o Head do branch atual (master) para o (line1) criado anteriormente.
+	$git checkout line1
+	
+	#verificando o head atual
+	$cat .git/head
+	
+	
+	
+
+	
+		
+#Ignorar Arquivos
+#Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo .gitignore não serão adicionados em um repositório. Existem dois arquivos .gitignore, são eles:
+#Geral: Normalmente armazenado no diretório do usuário do Sistema Operacional. O arquivo que possui a lista dos arquivos/diretórios a serem ignorados por todos os repositórios deverá ser declarado conforme citado acima.
+# O arquivo não precisa ter o nome de .gitignore.
+#Por repositório: Deve ser armazenado no diretório do repositório e deve conter a lista dos arquivos/diretórios que devem ser ignorados apenas para o repositório específico.		
+
+#Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)
+$ git add -f arquivo.txt
+		
+		
+		
+		
+		
+		
+		
+		
+# Configuração Básica do Cliente
+# As opções de configuração reconhecidas pelo Git se dividem em duas categorias: lado cliente e lado servidor
+    #cliente :utilizadas para configurar suas preferências pessoais de trabalho.
+	
+	#ver uma lista de todas as opções que a sua versão do Git reconhece, você pode executar
+	$ git config --help	
+	
+	# Lista configurações ativas
+	$git config --list	
+		
+
+			
+		
+		
+		
+#criando alias
+$git config --global alias.tree "log --oneline --decorate --all --graph"	
+$git tree
+
+
+
+
+##Outros comando linux
+
+# Obter a lista de subdiretórios do diretório corrente
+$find . -type d
+	
+#Obter em txt a lista de subdiretórios do diretório corrente
+$find . -type d > lista.txt	
+		
+		
   </body>
 </html>

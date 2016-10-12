@@ -1,0 +1,23 @@
+
+links referencia(Texto):
+http://tableless.com.br/iniciando-no-git-parte-1/
+http://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/
+http://glaucocustodio.com/2013/03/15/exibir-branch-atual-em-repositorios-git-no-terminal/
+http://rogerdudler.github.io/git-guide/index.pt_BR.html
+https://git-scm.com/book/pt-br/v1/Git-Essencial-Obtendo-um-Reposit%C3%B3rio-Git (clonar)
+https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Gerando-Sua-Chave-P%C3%BAblica-SSH
+https://gist.github.com/pedroppinheiro/a817c2ec4cb6d769b666
+https://gist.github.com/leocomelli/2545add34e4fec21ec16
+
+http://comandosgit.github.io/
+
+
+http://www.ccuec.unicamp.br/treinamento_int2004/linux_basico/
+http://www.ccuec.unicamp.br/treinamento_int2004/linux_basico/pag2.html
+
+http://www.ccuec.unicamp.br/treinamento_int2004/linux_basico/pag10.html
+
+
+
+
+https://www.vivaolinux.com.br/
