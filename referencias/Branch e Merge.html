@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge -->
+<html lang="en" class=" js fontface webkit chrome windows no-ie8"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<script type="text/javascript" src="./Branch e Merge_files/20c4a8c482"></script><script src="./Branch e Merge_files/nr-974.min.js.download"></script><script type="text/javascript" async="" id="gauges-tracker" data-site-id="4f919d1df5a1f504b3000026" src="./Branch e Merge_files/track.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"20c4a8c482","applicationID":"454369","transactionName":"dl5cQkcLXF9XRBoHW1paQRlGAVNHW1lb","queueTime":0,"applicationTime":667,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+  <title>Git - Básico de Branch e Merge</title>
+
+  <link href="https://git-scm.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="alternate" href="https://git-scm.com/blog.rss" type="application/rss+xml" title="Git - Blog">
+
+  <link rel="stylesheet" media="screen" href="./Branch e Merge_files/git-scm-65ca8280a031499ee9e8e2b10c8a596c.css">
+  <script src="./Branch e Merge_files/modernizr-10d8d48497292341fc1c4a63d06c6f61.js.download"></script>
+<script src="./Branch e Merge_files/modernizr-tests-0e26a9afd9c6455a99b7b4165485c366.js.download"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
+
+  <script src="./Branch e Merge_files/jsq2fql.js.download" type="text/javascript"></script>
+  <script>
+    //<![CDATA[
+      try{Typekit.load();}catch(e){}
+    //]]>
+  </script>
+
+</head>
+
+<body id="documentation" cz-shortcut-listen="true">
+
+  <div id="banner">
+    <div class="inner">
+      <h3>The 2016 Git User's Survey is now up! <em>12 September — 20 October 2016.</em></h3>
+
+      <p>Please devote a few moments of your time to
+      <a href="https://survs.com/survey/0janvqmmyg">fill out the simple questionnaire</a>.
+      It will help the Git community understand your needs, what you like
+      about Git (and what you don't), and help us improve it in general.
+      The results will be published at the
+      <a href="http://git.wiki.kernel.org/index.php/GitSurvey2016">GitSurvey2016</a>
+      wiki page.
+    </p></div>
+  </div>
+
+  <div class="inner">
+    <header>
+
+  <a href="https://git-scm.com/"><img src="./Branch e Merge_files/logo@2x.png" width="110" height="46" alt="Git"></a>
+  <span id="tagline">
+    <em>--</em>everything-is-local
+  </span>
+
+  <form id="search" action="https://git-scm.com/search/results">
+    <input id="search-text" name="search" placeholder="Search entire site..." autocomplete="off" type="text">
+  </form>
+  <div id="search-results"></div>
+
+</header>
+
+  </div> <!-- .inner -->
+
+    <div class="inner">
+      <div id="content-wrapper">
+        <aside class="sidebar">
+  <nav>
+    <ul>
+      <li>
+        <a href="https://git-scm.com/about">About</a>
+      </li>
+      <li>
+        <a class="active" href="https://git-scm.com/doc">Documentation</a>
+        <ul class="expanded">
+          <li>
+            <a href="https://git-scm.com/docs">Reference</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/book">Book</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/videos">Videos</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/doc/ext">External Links</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://git-scm.com/blog">Blog</a>
+      </li>
+      <li>
+        <a href="https://git-scm.com/downloads">Downloads</a>
+        <ul class="">
+          <li>
+            <a href="https://git-scm.com/downloads/guis">GUI Clients</a>
+          </li>
+          <li>
+            <a href="https://git-scm.com/downloads/logos">Logos</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://git-scm.com/community">Community</a>
+      </li>
+    </ul>
+      <hr class="sidebar">
+        
+  <p>
+This book is translated into
+  <a href="https://git-scm.com/book/de">Deutsch</a>,
+  <a href="https://git-scm.com/book/zh">简体中文</a>,
+  <a href="https://git-scm.com/book/zh-tw">正體中文</a>,
+  <a href="https://git-scm.com/book/fr/v2">Français</a>,
+  <a href="https://git-scm.com/book/ja">日本語</a>,
+  <a href="https://git-scm.com/book/nl">Nederlands</a>,
+  <a href="https://git-scm.com/book/ru">Русский</a>,
+  <a href="https://git-scm.com/book/ko">한국어</a>,
+  <a href="https://git-scm.com/book/pt-br">Português (Brasil)</a> and
+  <a href="https://git-scm.com/book/cs">Čeština</a>.
+</p>
+<p>
+Partial translations available in
+  <a href="https://git-scm.com/book/ar">Arabic</a>,
+  <a href="https://git-scm.com/book/es">Español</a>,
+  <a href="https://git-scm.com/book/id">Indonesian</a>,
+  <a href="https://git-scm.com/book/it">Italiano</a>,
+  <a href="https://git-scm.com/book/fi">Suomi</a>,
+  <a href="https://git-scm.com/book/mk">Македонски</a>,
+  <a href="https://git-scm.com/book/pl">Polski</a> and
+  <a href="https://git-scm.com/book/tr">Türkçe</a>.
+</p>
+<p>
+Translations started for
+  <a href="https://git-scm.com/book/az">Azərbaycan dili</a>,
+  <a href="https://git-scm.com/book/be">Беларуская</a>,
+  <a href="https://git-scm.com/book/ca">Català</a>,
+  <a href="https://git-scm.com/book/eo">Esperanto</a>,
+  <a href="https://git-scm.com/book/es-ni">Español (Nicaragua)</a>,
+  <a href="https://git-scm.com/book/fa" dir="rtl">فارسی</a>,
+  <a href="https://git-scm.com/book/hi">हिन्दी</a>,
+  <a href="https://git-scm.com/book/hu">Magyar</a>,
+  <a href="https://git-scm.com/book/no-nb">Norwegian Bokmål</a>,
+  <a href="https://git-scm.com/book/ro">Română</a>,
+  <a href="https://git-scm.com/book/sr">Српски</a>,
+  <a href="https://git-scm.com/book/th">ภาษาไทย</a>,
+  <a href="https://git-scm.com/book/vi">Tiếng Việt</a>,
+  <a href="https://git-scm.com/book/uk">Українська</a> and
+  <a href="https://git-scm.com/book/uz/v2">Ўзбекча</a>.
+</p>
+<hr class="sidebar">
+<p>
+The source of this book is <a href="https://github.com/progit/progit2">hosted on GitHub.</a><br>
+Patches, suggestions and comments are welcome.
+</p>
+
+  
+
+  </nav>
+</aside>
+        <div id="content">
+          
+
+<div id="book-chapters">
+  <a class="dropdown-trigger" id="book-chapters-trigger" data-panel-id="chapters-dropdown" href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#">Chapters ▾</a>
+<div class="dropdown-panel" id="chapters-dropdown">
+  <div class="three-column">
+    <div class="column-left">
+      <ol class="book-toc">
+  <li class="chapter">
+  <h2>1. <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos">Primeiros passos</a></h2>
+    <ol>
+          <li>
+            1.1
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Sobre-Controle-de-Vers%C3%A3o">Sobre Controle de Versão</a>
+          </li>
+          <li>
+            1.2
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Uma-Breve-Hist%C3%B3ria-do-Git">Uma Breve História do Git</a>
+          </li>
+          <li>
+            1.3
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-No%C3%A7%C3%B5es-B%C3%A1sicas-de-Git">Noções Básicas de Git</a>
+          </li>
+          <li>
+            1.4
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Instalando-Git">Instalando Git</a>
+          </li>
+          <li>
+            1.5
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Configura%C3%A7%C3%A3o-Inicial-do-Git">Configuração Inicial do Git</a>
+          </li>
+          <li>
+            1.6
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Obtendo-Ajuda">Obtendo Ajuda</a>
+          </li>
+          <li>
+            1.7
+            <a href="https://git-scm.com/book/pt-br/v1/Primeiros-passos-Resumo">Resumo</a>
+          </li>
+    </ol>
+  </li>
+  <li class="chapter">
+  <h2>2. <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial">Git Essencial</a></h2>
+    <ol>
+          <li>
+            2.1
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Obtendo-um-Reposit%C3%B3rio-Git">Obtendo um Repositório Git</a>
+          </li>
+          <li>
+            2.2
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Gravando-Altera%C3%A7%C3%B5es-no-Reposit%C3%B3rio">Gravando Alterações no Repositório</a>
+          </li>
+          <li>
+            2.3
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Visualizando-o-Hist%C3%B3rico-de-Commits">Visualizando o Histórico de Commits</a>
+          </li>
+          <li>
+            2.4
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Desfazendo-Coisas">Desfazendo Coisas</a>
+          </li>
+          <li>
+            2.5
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Trabalhando-com-Remotos">Trabalhando com Remotos</a>
+          </li>
+          <li>
+            2.6
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Tagging">Tagging</a>
+          </li>
+          <li>
+            2.7
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Dicas-e-Truques">Dicas e Truques</a>
+          </li>
+          <li>
+            2.8
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Essencial-Sum%C3%A1rio">Sumário</a>
+          </li>
+    </ol>
+  </li>
+  <li class="chapter">
+  <h2>3. <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git">Ramificação (Branching) no Git</a></h2>
+    <ol>
+          <li>
+            3.1
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-O-que-%C3%A9-um-Branch">O que é um Branch</a>
+          </li>
+          <li>
+            3.2
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge">Básico de Branch e Merge</a>
+          </li>
+          <li>
+            3.3
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Gerenciamento-de-Branches">Gerenciamento de Branches</a>
+          </li>
+          <li>
+            3.4
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Fluxos-de-Trabalho-com-Branches">Fluxos de Trabalho com Branches</a>
+          </li>
+          <li>
+            3.5
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Branches-Remotos">Branches Remotos</a>
+          </li>
+          <li>
+            3.6
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Rebasing">Rebasing</a>
+          </li>
+          <li>
+            3.7
+            <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Sum%C3%A1rio">Sumário</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class="column-middle">
+      <ol class="book-toc">
+  <li class="chapter">
+  <h2>4. <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor">Git no Servidor</a></h2>
+    <ol>
+          <li>
+            4.1
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Os-Protocolos">Os Protocolos</a>
+          </li>
+          <li>
+            4.2
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Configurando-Git-no-Servidor">Configurando Git no Servidor</a>
+          </li>
+          <li>
+            4.3
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Gerando-Sua-Chave-P%C3%BAblica-SSH">Gerando Sua Chave Pública SSH</a>
+          </li>
+          <li>
+            4.4
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Configurando-o-Servidor">Configurando o Servidor</a>
+          </li>
+          <li>
+            4.5
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Acesso-P%C3%BAblico">Acesso Público</a>
+          </li>
+          <li>
+            4.6
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-GitWeb">GitWeb</a>
+          </li>
+          <li>
+            4.7
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Gitosis">Gitosis</a>
+          </li>
+          <li>
+            4.8
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Gitolite">Gitolite</a>
+          </li>
+          <li>
+            4.9
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Servi%C3%A7o-Git">Serviço Git</a>
+          </li>
+          <li>
+            4.10
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Git-Hospedado">Git Hospedado</a>
+          </li>
+          <li>
+            4.11
+            <a href="https://git-scm.com/book/pt-br/v1/Git-no-Servidor-Sum%C3%A1rio">Sumário</a>
+          </li>
+    </ol>
+  </li>
+  <li class="chapter">
+  <h2>5. <a href="https://git-scm.com/book/pt-br/v1/Git-Distribu%C3%ADdo">Git Distribuído</a></h2>
+    <ol>
+          <li>
+            5.1
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Distribu%C3%ADdo-Fluxos-de-Trabalho-Distribu%C3%ADdos">Fluxos de Trabalho Distribuídos</a>
+          </li>
+          <li>
+            5.2
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Distribu%C3%ADdo-Contribuindo-Para-Um-Projeto">Contribuindo Para Um Projeto</a>
+          </li>
+          <li>
+            5.3
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Distribu%C3%ADdo-Mantendo-Um-Projeto">Mantendo Um Projeto</a>
+          </li>
+          <li>
+            5.4
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Distribu%C3%ADdo-Resumo">Resumo</a>
+          </li>
+    </ol>
+  </li>
+  <li class="chapter">
+  <h2>6. <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git">Ferramentas do Git</a></h2>
+    <ol>
+          <li>
+            6.1
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Sele%C3%A7%C3%A3o-de-Revis%C3%A3o">Seleção de Revisão</a>
+          </li>
+          <li>
+            6.2
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-%C3%81rea-de-Sele%C3%A7%C3%A3o-Interativa">Área de Seleção Interativa</a>
+          </li>
+          <li>
+            6.3
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Fazendo-Stash">Fazendo Stash</a>
+          </li>
+          <li>
+            6.4
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Reescrevendo-o-Hist%C3%B3rico">Reescrevendo o Histórico</a>
+          </li>
+          <li>
+            6.5
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Depurando-com-Git">Depurando com Git</a>
+          </li>
+          <li>
+            6.6
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Subm%C3%B3dulos">Submódulos</a>
+          </li>
+          <li>
+            6.7
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Merge-de-Sub-%C3%A1rvore-Subtree-Merging">Merge de Sub-árvore (Subtree Merging)</a>
+          </li>
+          <li>
+            6.8
+            <a href="https://git-scm.com/book/pt-br/v1/Ferramentas-do-Git-Sum%C3%A1rio">Sumário</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+    <div class="column-right">
+      <ol class="book-toc">
+  <li class="chapter">
+  <h2>7. <a href="https://git-scm.com/book/pt-br/v1/Customizando-o-Git">Customizando o Git</a></h2>
+    <ol>
+          <li>
+            7.1
+            <a href="https://git-scm.com/book/pt-br/v1/Customizando-o-Git-Configura%C3%A7%C3%A3o-do-Git">Configuração do Git</a>
+          </li>
+          <li>
+            7.2
+            <a href="https://git-scm.com/book/pt-br/v1/Customizando-o-Git-Atributos-Git">Atributos Git</a>
+          </li>
+          <li>
+            7.3
+            <a href="https://git-scm.com/book/pt-br/v1/Customizando-o-Git-Hooks-do-Git">Hooks do Git</a>
+          </li>
+          <li>
+            7.4
+            <a href="https://git-scm.com/book/pt-br/v1/Customizando-o-Git-Um-exemplo-de-Pol%C3%ADtica-Git-For%C3%A7ada">Um exemplo de Política Git Forçada</a>
+          </li>
+          <li>
+            7.5
+            <a href="https://git-scm.com/book/pt-br/v1/Customizando-o-Git-Sum%C3%A1rio">Sumário</a>
+          </li>
+    </ol>
+  </li>
+  <li class="chapter">
+  <h2>8. <a href="https://git-scm.com/book/pt-br/v1/Git-e-Outros-Sistemas">Git e Outros Sistemas</a></h2>
+    <ol>
+          <li>
+            8.1
+            <a href="https://git-scm.com/book/pt-br/v1/Git-e-Outros-Sistemas-Git-e-Subversion">Git e Subversion</a>
+          </li>
+          <li>
+            8.2
+            <a href="https://git-scm.com/book/pt-br/v1/Git-e-Outros-Sistemas-Migrando-para-o-Git">Migrando para o Git</a>
+          </li>
+          <li>
+            8.3
+            <a href="https://git-scm.com/book/pt-br/v1/Git-e-Outros-Sistemas-Resumo">Resumo</a>
+          </li>
+    </ol>
+  </li>
+  <li class="chapter">
+  <h2>9. <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente">Git Internamente</a></h2>
+    <ol>
+          <li>
+            9.1
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Encanamento-Plumbing-e-Porcelana-Porcelain">Encanamento (Plumbing) e Porcelana (Porcelain)</a>
+          </li>
+          <li>
+            9.2
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Objetos-do-Git">Objetos do Git</a>
+          </li>
+          <li>
+            9.3
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Referencias-Git">Referencias Git</a>
+          </li>
+          <li>
+            9.4
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Packfiles">Packfiles</a>
+          </li>
+          <li>
+            9.5
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-O-Refspec">O Refspec</a>
+          </li>
+          <li>
+            9.6
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Protocolos-de-Transfer%C3%AAncia">Protocolos de Transferência</a>
+          </li>
+          <li>
+            9.7
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Manuten%C3%A7%C3%A3o-e-Recupera%C3%A7%C3%A3o-de-Dados">Manutenção e Recuperação de Dados</a>
+          </li>
+          <li>
+            9.8
+            <a href="https://git-scm.com/book/pt-br/v1/Git-Internamente-Resumo">Resumo</a>
+          </li>
+    </ol>
+  </li>
+</ol>
+
+    </div>
+  </div>
+ </div>
+
+    <span class="light" id="edition">
+      1st Edition
+    </span>
+</div>
+
+<div id="main" class="book edition1">
+    <h1>3.2 Ramificação (Branching) no Git - Básico de Branch e Merge</h1>
+  <div><h2>Básico de Branch e Merge</h2>
+
+<p>Vamos ver um exemplo simples de uso de branch e merge com um fluxo de trabalho que você pode usar no mundo real. Você seguirá esses passos:</p>
+
+<ol>
+<li>Trabalhar em um web site.</li>
+<li>Criar um branch para uma nova história em que está trabalhando.</li>
+<li>Trabalhar nesse branch.</li>
+</ol>
+
+<p>Nesse etapa, você receberá um telefonema informando que outro problema crítico existe e precisa de correção. Você fará o seguinte:</p>
+
+<ol>
+<li>Voltar ao seu branch de produção.</li>
+<li>Criar um branch para adicionar a correção.</li>
+<li>Depois de testado, fazer o merge do branch da correção, e enviar para produção.</li>
+<li>Retornar à sua história anterior e continuar trabalhando.</li>
+</ol>
+
+<h3 id="Branch-Básico"><a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#Branch-Básico">Branch Básico</a></h3>
+
+<p>Primeiro, digamos que você esteja trabalhando no seu projeto e já tem alguns commits (veja Figura 3-10).</p>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0310-tn.png"></center><br>
+Figura 3-10. Um histórico de commits pequeno e simples.<p></p>
+
+<p>Você decidiu que irá trabalhar na tarefa (issue) #53 do gerenciador de bugs ou tarefas que sua empresa usa. Para deixar claro, Git não é amarrado a nenhum gerenciador de tarefas em particular; mas já que a tarefa #53 tem um foco diferente, você criará um branch novo para trabalhar nele. Para criar um branch e mudar para ele ao mesmo tempo, você pode executar o comando <code>git checkout</code> com a opção <code>-b</code>:</p>
+
+<pre><code>$ git checkout -b iss53
+Switched to a new branch "iss53"
+</code></pre>
+
+<p>Isso é um atalho para:</p>
+
+<pre><code>$ git branch iss53
+$ git checkout iss53
+</code></pre>
+
+<p>Figura 3-11 ilustra o resultado.</p>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0311-tn.png"></center><br>
+Figura 3-11. Criando um branch novo<p></p>
+
+<p>Você trabalha no seu web site e faz alguns commits. Ao fazer isso o branch <code>iss53</code> avançará, pois você fez o checkout dele (isto é, seu HEAD está apontando para ele; veja a Figura 3-12):</p>
+
+<pre><code>$ vim index.html
+$ git commit -a -m 'adicionei um novo rodapé [issue 53]'
+</code></pre>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0312-tn.png"></center><br>
+Figura 3-12. O branch iss53 avançou com suas modificações.<p></p>
+
+<p>Nesse momento você recebe uma ligação dizendo que existe um problema com o web site e você deve resolvê-lo imediatamente. Com Git, você não precisa fazer o deploy de sua correção junto com as modificações que você fez no <code>iss53</code>, e você não precisa se esforçar muito para reverter essas modificações antes que você possa aplicar sua correção em produção. Tudo que você tem a fazer é voltar ao seu branch master.</p>
+
+<p>No entanto, antes de fazer isso, note que seu diretório de trabalho ou área de seleção tem modificações que não entraram em commits e que estão gerando conflitos com o branch que você está fazendo o checkout, Git não deixará você mudar de branch. É melhor ter uma área de trabalho limpa quando mudar de branch. Existem maneiras de contornar esta situação (isto é, incluir e fazer o commit) que vamos falar depois. Por enquanto, você fez o commit de todas as suas modificações, então você pode mudar para o seu branch master:</p>
+
+<pre><code>$ git checkout master
+Switched to branch "master"
+</code></pre>
+
+<p>Nesse ponto, o diretório do seu projeto está exatamente do jeito que estava antes de você começar a trabalhar na tarefa #53, e você se concentra na correção do erro. É importante lembrar desse ponto: Git restabelece seu diretório de trabalho para ficar igual ao snapshot do commit que o branch que você criou aponta. Ele adiciona, remove, e modifica arquivos automaticamente para garantir que sua cópia é o que o branch parecia no seu último commit nele.</p>
+
+<p>Em seguida, você tem uma correção para fazer. Vamos criar um branch para a correção (hotfix) para trabalhar até a conclusão (veja Figura 3-13):</p>
+
+<pre><code>$ git checkout -b 'hotfix'
+Switched to a new branch "hotfix"
+$ vim index.html
+$ git commit -a -m 'consertei o endereço de email'
+[hotfix]: created 3a0874c: "consertei o endereço de email"
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0313-tn.png"></center><br>
+Figura 3-13. branch de correção (hotfix) baseado num ponto de seu branch master.<p></p>
+
+<p>Você pode rodar seus testes, tenha certeza que a correção é o que você quer, e faça o merge no seu branch master para fazer o deploy em produção. Você faz isso com o comando <code>git merge</code>:</p>
+
+<pre><code>$ git checkout master
+$ git merge hotfix
+Updating f42c576..3a0874c
+Fast forward
+ README |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+</code></pre>
+
+<p>Você irá notar a frase "Fast forward" no merge. Em razão do branch que você fez o merge apontar para o commit que está diretamente acima do commit que você se encontra, Git avança o ponteiro adiante. Em outras palavras, quando você tenta fazer o merge de um commit com outro que pode ser alcançado seguindo o histórico do primeiro, Git simplifica as coisas movendo o ponteiro adiante porque não existe modificações divergente para fazer o merge — isso é chamado de "fast forward".</p>
+
+<p>Sua modificação está agora no snapshot do commit apontado pelo branch <code>master</code>, e você pode fazer o deploy (veja Figura 3-14).</p>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0314-tn.png"></center><br>
+Figura 3-14. Depois do merge seu branch master aponta para o mesmo local que o branch hotfix.<p></p>
+
+<p>Depois que a sua correção super importante foi enviada, você está pronto para voltar ao trabalho que estava fazendo antes de ser interrompido. No entanto, primeiro você apagará o branch <code>hotfix</code>, pois você não precisa mais dele — o branch <code>master</code> aponta para o mesmo local. Você pode excluí-lo com a opção <code>-d</code> em <code>git branch</code>:</p>
+
+<pre><code>$ git branch -d hotfix
+Deleted branch hotfix (3a0874c).
+</code></pre>
+
+<p>Agora você pode voltar para o trabalho incompleto no branch da tafera #53 e continuar a trabalhar nele (veja Figura 3-15):</p>
+
+<pre><code>$ git checkout iss53
+Switched to branch "iss53"
+$ vim index.html
+$ git commit -a -m 'novo rodapé terminado [issue 53]'
+[iss53]: created ad82d7a: "novo rodapé terminado [issue 53]"
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0315-tn.png"></center><br>
+Figura 3-15. Seu branch iss53 pode avançar de forma independente.<p></p>
+
+<p>Vale a pena lembrar aqui que o trabalho feito no seu branch <code>hotfix</code> não existe nos arquivos do seu branch <code>iss53</code>. Se você precisa incluí-lo, você pode fazer o merge do seu branch <code>master</code> no seu branch <code>iss53</code> executando o comando <code>git merge master</code>, ou você pode esperar para integrar essas mudanças até você decidir fazer o pull do branch <code>iss53</code> no <code>master</code> mais tarde.</p>
+
+<h3 id="Merge-Básico"><a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#Merge-Básico">Merge Básico</a></h3>
+
+<p>Suponha que você decidiu que o trabalho na tarefa #53 está completo e pronto para ser feito o merge no branch <code>master</code>. Para fazer isso, você fará o merge do seu branch <code>iss53</code>, bem como o merge do branch <code>hotfix</code> de antes. Tudo que você tem a fazer é executar o checkout do branch para onde deseja fazer o merge e então rodar o comando <code>git merge</code>:</p>
+
+<pre><code>$ git checkout master
+$ git merge iss53
+Merge made by recursive.
+ README | 1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+</code></pre>
+
+<p>Isso parece um pouco diferente do merge de <code>hotfix</code> que você fez antes. Neste caso, o histórico do seu desenvolvimento divergiu em algum ponto anterior. Pelo fato do commit no branch em que você está não ser um ancestral direto do branch que você está fazendo o merge, Git tem um trabalho adicional. Neste caso, Git faz um merge simples de três vias, usando os dois snapshots apontados pelas pontas dos branches e o ancestral comum dos dois. A Figura 3-16 destaca os três snapshots que Git usa para fazer o merge nesse caso.</p>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0316-tn.png"></center><br>
+Figura 3-16. Git identifica automaticamente a melhor base ancestral comum para o merge do branch.<p></p>
+
+<p>Em vez de simplesmente avançar o ponteiro do branch adiante, Git cria um novo snapshot que resulta do merge de três vias e automaticamente cria um novo commit que aponta para ele (veja Figura 3-17). Isso é conhecido como um merge de commits e é especial pois tem mais de um pai.</p>
+
+<p>Vale a pena destacar que o Git determina o melhor ancestral comum para usar como base para o merge; isso é diferente no CVS ou Subversion (antes da versão 1.5), onde o desenvolvedor que está fazendo o merge tem que descobrir a melhor base para o merge por si próprio. Isso faz o merge muito mais fácil no Git do que nesses outros sistemas.</p>
+
+<p></p><center><img src="./Branch e Merge_files/18333fig0317-tn.png"></center><br>
+Figura 3-17. Git cria automaticamente um novo objeto commit que contém as modificações do merge.<p></p>
+
+<p>Agora que foi feito o merge no seu trabalho, você não precisa mais do branch <code>iss53</code>. Você pode apagá-lo e fechar manualmente o chamado no seu gerenciador de chamados:</p>
+
+<pre><code>$ git branch -d iss53
+</code></pre>
+
+<h3 id="Conflitos-de-Merge-Básico"><a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#Conflitos-de-Merge-Básico">Conflitos de Merge Básico</a></h3>
+
+<p>Às vezes, esse processo não funciona sem problemas. Se você alterou a mesma parte do mesmo arquivo de forma diferente nos dois branches que está fazendo o merge, Git não será capaz de executar o merge de forma clara. Se sua correção para o erro #53 alterou a mesma parte de um arquivo que <code>hotfix</code>, você terá um conflito de merge parecido com isso:</p>
+
+<pre><code>$ git merge iss53
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+</code></pre>
+
+<p>Git não criou automaticamente um novo commit para o merge. Ele fez uma pausa no processo enquanto você resolve o conflito. Se você quer ver em quais arquivos não foi feito o merge, em qualquer momento depois do conflito, você pode executar <code>git status</code>:</p>
+
+<pre><code>[master*]$ git status
+index.html: needs merge
+# On branch master
+# Changes not staged for commit:
+#   (use "git add &lt;file&gt;..." to update what will be committed)
+#   (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+#
+#    unmerged:   index.html
+#
+</code></pre>
+
+<p>Qualquer coisa que tem conflito no merge e não foi resolvido é listado como "unmerged". Git adiciona marcadores padrão de resolução de conflitos nos arquivos que têm conflitos, para que você possa abri-los manualmente e resolver esses conflitos. Seu arquivo terá uma seção parecida com isso:</p>
+
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:index.html
+&lt;div id="footer"&gt;contato : email.support@github.com&lt;/div&gt;
+=======
+&lt;div id="footer"&gt;
+  por favor nos contate em support@github.com
+&lt;/div&gt;
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; iss53:index.html
+</code></pre>
+
+<p>Isso significa que a versão em HEAD (seu branch master, pois era isso que você tinha quando executou o comando merge) é a parte superior desse bloco (tudo acima de <code>=======</code>), enquanto a versão no seu branch <code>iss53</code> é toda a parte inferior. Para resolver esse conflito, você tem que optar entre um lado ou outro, ou fazer o merge do conteúdo você mesmo. Por exemplo, você pode resolver esse conflito através da substituição do bloco inteiro por isso:</p>
+
+<pre><code>&lt;div id="footer"&gt;
+por favor nos contate em email.support@github.com
+&lt;/div&gt;
+</code></pre>
+
+<p>Esta solução tem um pouco de cada seção, e eu removi completamente as linhas <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, e <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>. Depois que você resolveu cada uma dessas seções em cada arquivo com conflito, rode <code>git add</code> em cada arquivo para marcá-lo como resolvido. Colocar o arquivo na área de seleção o marcar como resolvido no Git. Se você quer usar uma ferramenta gráfica para resolver esses problemas, você pode executar <code>git mergetool</code>, que abre uma ferramenta visual de merge adequada e percorre os conflitos:</p>
+
+<pre><code>$ git mergetool
+merge tool candidates: kdiff3 tkdiff xxdiff meld gvimdiff opendiff emerge vimdiff
+Merging the files: index.html
+
+Normal merge conflict for 'index.html':
+  {local}: modified
+  {remote}: modified
+Hit return to start merge resolution tool (opendiff):
+</code></pre>
+
+<p>Se você quer usar uma ferramenta de merge diferente da padrão (Git escolheu <code>opendiff</code> para mim, neste caso, porque eu rodei o comando em um Mac), você pode ver todas as ferramentas disponíveis listadas no topo depois de “merge tool candidates”. Digite o nome da ferramenta que você prefere usar. No <em>capítulo 7</em>, discutiremos como você pode alterar esse valor para o seu ambiente.</p>
+
+<p>Depois de sair da ferramenta de merge, Git pergunta se o merge foi concluído com sucesso. Se você disser ao script que foi, ele coloca o arquivo na área de seleção para marcá-lo como resolvido pra você.</p>
+
+<p>Se você rodar <code>git status</code> novamente para verificar que todos os conflitos foram resolvidos:</p>
+
+<pre><code>$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD &lt;file&gt;..." to unstage)
+#
+#    modified:   index.html
+#
+</code></pre>
+
+<p>Se você está satisfeito com isso, e verificou que tudo que havia conflito foi colocado na área de seleção, você pode digitar <code>git commit</code> para concluir o commit do merge. A mensagem de commit padrão é algo semelhante a isso:</p>
+
+<pre><code>Merge branch 'iss53'
+
+Conflicts:
+  index.html
+#
+# It looks like you may be committing a MERGE.
+# If this is not correct, please remove the file
+# .git/MERGE_HEAD
+# and try again.
+#
+</code></pre>
+
+<p>Você pode modificar essa mensagem com detalhes sobre como você resolveu o merge se você acha que isso seria útil para outros quando olharem esse merge no futuro — por que você fez o que fez, se não é óbvio.</p>
+
+<div id="nav"><a href="https://git-scm.com/book/pt-br/Ramifica%C3%A7%C3%A3o-Branching-no-Git-O-que-%C3%A9-um-Branch">prev</a> | <a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-Gerenciamento-de-Branches">next</a></div></div>
+</div>
+
+        </div>
+      </div>
+      <footer>
+  <div class="site-source">
+    This <a href="https://github.com/git/git-scm.com/blob/master/README.md#license">open sourced</a> site is <a href="https://github.com/git/git-scm.com">hosted on GitHub.</a><br>
+    Patches, suggestions and comments are welcome.
+  </div>
+  <div class="sfc-member">
+    Git is a member of <a href="https://git-scm.com/sfc">Software Freedom Conservancy</a>
+  </div>
+</footer>
+
+<script src="./Branch e Merge_files/jquery-1.7.1.min-ae4fcd0fbc7a69a0676014f3b0488876.js.download"></script>
+<script src="./Branch e Merge_files/jquery-ui-1.8.18.custom.min-e26b28f4c867b7ddf80395d18c42afe3.js.download"></script>
+<script src="./Branch e Merge_files/jquery.defaultvalue-fb4265b0e862acfce66a73a5131528b3.js.download"></script>
+<script src="./Branch e Merge_files/session.min-84e4d7864bab5f4f7b2eafd9c1ebc0ca.js.download"></script>
+<script src="./Branch e Merge_files/site-1dedb2e04243f2cda0b571c1ade66561.js.download"></script>
+
+    </div><script type="text/javascript" src="./Branch e Merge_files/jsapi"></script>
+
+
+
+<div id="window-resizer-tooltip"><a href="https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div></body></html>
