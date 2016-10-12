@@ -97,7 +97,12 @@
 <BR>    #-graph 
 <BR>    # Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (todos os branchs)
 <BR>        $ git log --oneline --decorate --all --graph
-<BR><BR>
+<BR>
+<BR> 
+<BR>    # Criando um alias para comando log
+<BR>    $ git config --global alias.logall "log --oneline --decorate --all --graph"
+<BR>	$ git logall
+<BR>
 <BR>    #Para subir para o github:
 <BR>    	# define o diretorio(projeto) do github que será atualizado.
 <BR>    	$ git remote add origin https://github.com/Datacrusher/git_command.git
@@ -161,7 +166,7 @@
 <BR>
 <BR> 	#tipos
 <BR> 	#"Fast-forward" é atualização de referêencia, não tendo conflitos (divergencias)
-<BR>
+<BR>	#"Recursive"
 <BR>
 <BR>
 <BR>
