@@ -1,0 +1,88 @@
+
+
+
+Git -> Sistema de controle de versão distribuido
+SCM -> Source Control Management
+Criado por linus torvalds (2005), para auxiliar no dDesenvolvimento do Linux.
+
+- Gerência de Configuração de Software
+	- Durante um projeto de desenvolvimento
+		* O que mudou e quando ?
+		* Por que Mudou ?
+		* Quem Mudou ?
+		* Podemos reproduzir a mudança ?
+		
+	* Identificação
+	* Documentação
+	* Controle
+	* Auditoria
+
+	
+	-Artefatos:
+		- Código fonte
+		- Documentação do software
+		- Manual do usuário
+	
+- Controle de Versão
+
+	* Merge
+	* Commit
+	*
+	
+
+Ferramentas de Controle de Versão
+- Git
+- Subversion (SVN)
+- Mercurial (HG)
+- CVS - Concurrent Versioning System
+- Bazaar
+
+
+
+
+GitHub -> servidor de repositórios Git
+- Surgiu em 2008
+
+Servidores
+* GitHub
+* GitLab
+* Bitbucket
+* SourceForge
+* Google Code (encerrado 2015)
+
+
+
+Instalando
+
+no linux
+
+-instalar:
+ sudo apt-get install git
+ 
+-interface grafica;
+ https://git-scm.com/downloads/guis
+ 
+ recomendado GitEye
+ www.collab.net/downloads/giteye
+ 
+ 
+https//github.com
+
+
+aulas
+Git e GitHub para iniciantes (PALESTRA)
+https://youtu.be/TReVFOxhh7E
+1
+https://www.youtube.com/watch?v=Ahv6vPTZJqk
+2
+https://www.youtube.com/watch?v=o75s802bPuk
+3
+https://www.youtube.com/watch?v=CvfjAFaS6yM
+4
+https://www.youtube.com/watch?v=12Ep-xUV-oU
+5
+https://www.youtube.com/watch?v=C8rYPMGqNlo
+6
+https://www.youtube.com/watch?v=T5smm3pD-io
+
+
