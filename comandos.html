@@ -92,9 +92,12 @@
 <BR>
 <BR>    #-all 
 <BR>    # Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (todos os branchs)
-<BR>        $ git log --oneline --decorate -all<BR>
+<BR>        $ git log --oneline --decorate --all
 <BR>
-<BR>
+<BR>    #-graph 
+<BR>    # Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (todos os branchs)
+<BR>        $ git log --oneline --decorate --all --graph
+<BR><BR>
 <BR>    #Para subir para o github:
 <BR>    	# define o diretorio(projeto) do github que será atualizado.
 <BR>    	$ git remote add origin https://github.com/Datacrusher/git_command.git
@@ -120,6 +123,12 @@
 <BR>        $ cat .git/refs/heads/master
 <BR>        $ cat .git/refs/heads/line1
 <BR>
+<BR>
+<BR>	# Exclui uma linha do tempo(branch)
+<BR>	$ git branch -d line1
+<BR>
+<BR>
+<BR>
 <BR>   # HEAD (area de trabalho staging)
 <BR>    # mosca o local atual de trabalho (staging)
 <BR>    $ cat .git/head
@@ -131,6 +140,12 @@
 <BR>
 <BR>   # verificando o head (area de trabalho) atual.
 <BR>   $ cat .git/head
+<BR>
+<BR>   	#Cria uma nova Branch  e aponta (torna) o novo Branch como area atual de trabalho
+<BR>	$ git checkout -b line2 	 
+<BR>
+<BR>
+<BR>
 <BR>
 <BR>
 <BR><h3>Merging</h3>
