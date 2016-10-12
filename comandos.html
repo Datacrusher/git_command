@@ -124,7 +124,7 @@
 <BR>        $ git branch line1
 <BR>
 <BR>   # O comando Cat serve para criar ou mostrar o conteúdo de um arquivo.
-<BR>   # no exemplo abaixo o conteudo mostra o ponteiro para o ultimo commit das Branchs
+<BR>   # no exemplo abaixo o conteudo mostra o ponteiro para o ultimo commit das Branches
 <BR>        $ cat .git/refs/heads/master
 <BR>        $ cat .git/refs/heads/line1
 <BR>
@@ -164,11 +164,13 @@
 <BR>	# Atualiza as mudanças da branch "line1" para a branch "master"
 <BR>	$git merge line1  
 <BR>
-<BR> 	#tipos
-<BR> 	#"Fast-forward" é atualização de referência, não tendo conflitos (divergencias)
-<BR>	#"Recursive Strategy" 
+<BR>	#* Divergência é diferente de Conflito. 
 <BR>
+<BR> 	# TIPOS
+<BR> 	# "Fast-forward" é atualização (merge) de  branch com divergencia simples
+<BR>	# "Recursive Strategy" e a atualização (merge) de branches que possuem divergencias em ambos, mas não gera conflito.
 <BR>
+<BR>   # Referencias:https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge
 <BR>
 <BR>
 <BR>

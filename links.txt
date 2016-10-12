@@ -17,7 +17,7 @@ http://www.ccuec.unicamp.br/treinamento_int2004/linux_basico/pag2.html
 
 http://www.ccuec.unicamp.br/treinamento_int2004/linux_basico/pag10.html
 
-
+https://git-scm.com/book/pt-br/v1/Ramifica%C3%A7%C3%A3o-Branching-no-Git-B%C3%A1sico-de-Branch-e-Merge
 
 
 https://www.vivaolinux.com.br/
