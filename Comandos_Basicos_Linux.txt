@@ -1,0 +1,73 @@
+Comandos Básicos do Linux
+
+Manipulação de Arquivos e Diretórios
+
+cd
+
+O comando “cd” serve para acessar e mudar de diretório corrente. Ele é utilizado para a navegação entre as pastas do computador.
+Exemplo: cd /home/baixaki/Desktop – Acessa a pasta correspondente à área de trabalho do usuário baixaki.
+
+pwd
+
+Exibe a pasta atual na qual o usuário se encontra.
+Exemplo: Se o usuário baixaki digitar cd ~/ e em seguida digitar pwd, o retorno será /home/baixaki .
+
+ls
+
+Exibe os arquivos que estão dentro da pasta na qual o usuário está no momento.
+Para usá-lo basta digitar ls. Existem variações, tais como ls -l, com a qual é possível obter informações mais detalhadas sobre os arquivos, como permissões e tamanho.
+
+cp
+
+Copia arquivos – o famoso CTRL+C + CTRL+V. Exemplo:
+$ cp Exemplo.doc /home/baixaki/Trabalho/EXEMPLO.doc  - O arquivo EXEMPLO.doc foi copiado para a pasta /home/baixaki/Trabalho com o mesmo nome.
+
+mv
+
+O comando "mv" tem a função de mover arquivos. A utilização dele é praticamente igual  a do comando cp. Exemplo:
+$ mv MV.txt /home/baixaki/Trabalho/MV.txt  - O arquivo MV.txt foi movido para a pasta /home/baixaki/Trabalho com o mesmo nome.
+$ mv MV.txt  VM.txt – O arquivo MV.txt continuou onde estava, porém, agora possui o nome de VM.txt.
+
+rm
+
+O "rm" tem a função de remover arquivos. Tome cuidado ao utilizá-lo, pois caso você remova algum arquivo por engano, o erro será irreversível.
+Exemplo: rm /home/baixaki/Arquivo.txt – O arquivo Arquivo.txt localizado na pasta /home/baixaki foi deletado.
+
+rmdir
+
+Este comando tem a função de  remover diretórios vazios. Exemplo: rmdir TESTE – Neste exemplo, o diretório vazio TESTE foi removido do local onde o usuário se encontrava.
+
+Também é possível remover diretórios através de uma variação do comando rm: rm -r. Neste caso, o comando rm -r TESTE realizaria a mesma tarefa, porém, o diretório não precisa estar vazio.
+
+mkdir
+
+Enquanto o rmdir remove, este comando cria diretórios.
+Exemplo: mkdir DIRETORIO – A pasta DIRETORIO foi criada no local onde o usuário se encontrava.
+
+Outros Comandos
+
+cat
+
+O "cat" exibe o que há dentro de determinado arquivo. Ele é útil quando deseja ler ou exibir um arquivo de texto.
+Exemplo: cat TEXTO.txt – Exibe o conteúdo do arquivo TEXTO.txt
+
+file
+
+Este comando informa qual é o tipo de arquivo que foi digitado como parâmetro.
+Exemplo: file TEXTO.txt – Retorna a informação que é um arquivo de texto.
+
+clear
+
+O "clear" serve para limpar a tela do terminal. O mesmo ocorre quando se pressiona CTRL+L.
+
+man
+
+O comando "man" exibe a função de determinado comando. Ele é muito útil quando não se sabe o que um comando faz, ou quando se pretende aprender mais sobre a sua utilização. Aconselha-se a leitura do manual sempre que houver dúvidas.
+
+Exemplo: man ls – Exibe o que faz o comando ls e quais são suas variações.
+man man – Exibe o que o comando man faz.
+Para sair do man pressione o tecla “q”.
+
+Por padrão, o man vem configurado para o inglês. No Ubuntu, você pode deixá-lo em português através do comando  $ sudo apt-get install manpages-pt manpages-pt-dev , porém alguns comando continuarão em inglês.
+
+Estes são alguns dos principais comandos existentes no sistema Linux. Eles são ferramentas poderosas que podem auxiliar na realização de tarefas, simplificando-as e tornando a execução mais ágil. Contudo, há muito mais, portanto, quanto mais você conhecer, maior será sua produtividade com o Linux.

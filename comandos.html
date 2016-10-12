@@ -9,8 +9,7 @@
 
 <BR> pagina para baixar o Git versão windows : https://git-scm.com/
 <BR>
-<BR>
-<h3>Comandos</h3>
+<BR><h3>Comandos Linux</h3>
 <BR>
 <BR>	# mostra o diretorio atual
 <BR>    $ pwd
@@ -27,19 +26,27 @@
 <BR>    # Cria um diretorio
 <BR>    $ mkdir
 <BR>
-<BR>    #
-<BR>    $ cd
+<BR>    # CD - O comando “cd” serve para acessar e mudar de diretório corrente. Ele é utilizado para a navegação entre as pastas do computador.
+<BR>    $ cd <diretorio>
 <BR>
+<BR>		#Ex: 
+<BR>    	$ cd meus_arquivos
+<BR>
+<BR><h3>Comandos Git</h3>
+<BR>
+<BR><h4>git Version</h4>
 <BR>    # Mostra a versão instalada do git.
 <BR>    $ git version
 <BR>
 <BR>
 <BR>    #Cria um arquivo "README.md" com o conteudo "# git_command"
 <BR>    $ echo "# git_command" >> README.md
-<BR>
+
+<BR><h4>git init</h4>
 <BR>    # Cria um repositorio vazio dentro da pasta que estiver posicionado.
 <BR>    $ git init
-<BR>
+
+<BR><h4>git status</h4>
 <BR>    # Mostra as diferenças entre diretorio do projeto (Diretorio de trabalho) e a area de staging (conteiner do git).
 <BR>    $ git status
 <BR>
@@ -49,8 +56,8 @@
 <BR>		2# "Index" (area Staging),funciona como uma área temporária (staging)
 <BR>		3# "HEAD" area que aponta para o último commit (confirmação das alterações). 
 <BR>
-<BR>
-<BR>	
+
+<BR><h4>git add</h4>	
 <BR>    # git add - inclui alterações dos arquivos da area de trabalho para a area de stanging.
 <BR>    $ git add
 <br>
@@ -60,25 +67,33 @@
 <BR>		# É importante: O comando ADD não adiciona automaticamente o(s) arquivo(s) ao repositório, apenas prepara para entrar na próxima revisão do repositório.(O envio é feito ao executar o comando push, ver abaixo)
 <BR>		
 <BR>		
-<BR>		
+<BR><h4>git config</h4>	
 <BR>    # Configurando o git
 <BR>        $ git config --global user.email "datacrusher@outlook.com"
 <BR>            $ git config --global user.name "datacrusher"
 <BR>        # Estas configurações ficam alocadas no arquivo ~/.gitconfig, onde o ~ é o seu diretório home.
 <BR>        # No Windows, ele fica em c:\Usuarios\<username>\.gitconfig.
 <BR>
-<BR>
+<BR><h4>git commit</h4>
 <BR>    #Confirma (salva) as mudanças (alterações) feitas anteriormente.
 <BR>    $ git commit - m 'Primeiro Commit'
 <BR>
+<BR><h4>git log</h4>    
 <BR>    #Visualizar o Histórico de Commits
 <BR>       $ git log
 <BR>
+<BR>    #--oneline
 <BR>    #Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica
 <BR>        $ git log --oneline
 <BR>
-<BR>    # Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (branchs)
-<BR>    $ git log --oneline --decorate
+<BR>    #--decorate
+<BR>	# Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (branchs atual)
+<BR>        $ git log --oneline --decorate
+<BR>
+<BR>    #-all 
+<BR>    # Visualizar o Histórico de Commits. cada commit sera mostrado em uma linhas unica e mostra as linhas do tempo (todos os branchs)
+<BR>        $ git log --oneline --decorate -all<BR>
+<BR>
 <BR>
 <BR>    #Para subir para o github:
 <BR>    	# define o diretorio(projeto) do github que será atualizado.
@@ -87,46 +102,76 @@
 <BR>        #Push (empurrar) é usado para publicar todos os seus commits para o github. Neste momento, será pedido a sua senha.
 <BR>        $ git push -u origin master
 <BR>
+<BR><h3> Branch</h3>
 <BR>
-<h4>Branch e  Merging </h4>
+<BR>   #Branch é uma nova linha de desenvolvimento (linha de tempo)independente da principal (master). [traduções: Seção, ramo, galho , subdividir-se ]
 <BR>
-<BR>        #Branch é uma nova linha de desenvolvimento (linha de tempo)independente da principal (master). [traduções: Seção, ramo, galho , subdividir-se ]
-
-
-        #visualizando as linhas do temo criadas.apenas digite o comando
-        $git branch
-
-        #Criando uma nova linha de tempo (branch)
-        $git branch <nome desejado>
-        # Ex:
-        $git branch line1
-
-        # O comando Cat serve para criar ou mostrar o conteúdo de um arquivo.
-        #no exemplo abaixo o conteudo mostra o ponteiro para o ultimo commit
-        $cat .git/refs/heads/master
-        $cat .git/refs/heads/line1
-
-        #HEAD (area de trabalho staging)
-        #mosca o local atual de trabalho (staging)
-        $cat .git/head
-
-        # mudar de Branch (linha de tempo)
-        # o comando abaixo Move o Head do branch atual (master) para o (line1) criado anteriormente.
-        $git checkout line1
-
-        #verificando o head atual
-        $cat .git/head
-
-
-
-
-
-
-<BR>#Ignorar Arquivos
-<BR>#Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo .gitignore não serão adicionados em um repositório. Existem dois arquivos .gitignore, são eles:
-<BR>#Geral: Normalmente armazenado no diretório do usuário do Sistema Operacional. O arquivo que possui a lista dos arquivos/diretórios a serem ignorados por todos os repositórios deverá ser declarado conforme citado acima.
+<BR><BR><h4>git branch</h4> 
+<BR>   #Visualizar as linhas do tempo criadas.(digite o comando abaixo)
+<BR>   $git branch
+<BR>
+<BR>   #Criando uma nova linha de tempo (branch)
+<BR>   $ git branch <nome desejado>
+<BR>        # Ex:
+<BR>        $ git branch line1
+<BR>
+<BR>   # O comando Cat serve para criar ou mostrar o conteúdo de um arquivo.
+<BR>   # no exemplo abaixo o conteudo mostra o ponteiro para o ultimo commit das Branchs
+<BR>        $ cat .git/refs/heads/master
+<BR>        $ cat .git/refs/heads/line1
+<BR>
+<BR>   # HEAD (area de trabalho staging)
+<BR>    # mosca o local atual de trabalho (staging)
+<BR>    $ cat .git/head
+<BR>
+<BR><h4>git checkout</h4> 
+<BR>   # mudar de Branch (linha de tempo)
+<BR>   # o comando abaixo Move o Head do branch atual (master) para o (line1) criado anteriormente.
+<BR>   $ git checkout line1
+<BR>
+<BR>   # verificando o head (area de trabalho) atual.
+<BR>   $ cat .git/head
+<BR>
+<BR>
+<BR><h3>Merging</h3>
+<BR>
+<BR>
+<BR><BR><h4>git merge</h4> 
+<BR>	#Merge -
+<BR>
+<BR>	# muda a area de trabalho (branch) para Master
+<br>	$ git checkout master
+<BR>	# Atualiza as mudanças da branch "line1" para a branch "master"
+<BR>	$git merge line1  
+<BR>
+<BR> 	#tipos
+<BR> 	#"Fast-forward" é atualização de referêencia, não tendo conflitos (divergencias)
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR><BR><BR><BR><BR><BR><BR><BR>
+<BR>
+<BR># Ignorar Arquivos, no momento da transferencia para o github.
+<BR># Os nomes de arquivos/diretórios ou extensões de arquivos listados no arquivo .gitignore não serão adicionados em um repositório. Existem dois arquivos .gitignore, são eles:
+<BR># Geral: Normalmente armazenado no diretório do usuário do Sistema Operacional. O arquivo que possui a lista dos arquivos/diretórios a serem ignorados por todos os repositórios deverá ser declarado conforme citado acima.
 <BR># O arquivo não precisa ter o nome de .gitignore.
-<BR>#Por repositório: Deve ser armazenado no diretório do repositório e deve conter a lista dos arquivos/diretórios que devem ser ignorados apenas para o repositório específico.
+<BR># Por repositório: Deve ser armazenado no diretório do repositório e deve conter a lista dos arquivos/diretórios que devem ser ignorados apenas para o repositório específico.
 <BR>
 <BR>#Adicionar um arquivo que esta listado no .gitignore (geral ou do repositório)
 <BR>$ git add -f arquivo.txt
